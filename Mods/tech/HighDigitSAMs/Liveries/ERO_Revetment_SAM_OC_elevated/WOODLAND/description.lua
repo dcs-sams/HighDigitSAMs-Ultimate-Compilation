@@ -1,0 +1,9 @@
+livery = {
+	{"Material",	DIFFUSE			,	"Concrete_Brown", true};
+	{"Material",	NORMAL_MAP			,	"Concrete_Brown_N", true};
+	{"Material",	SPECULAR			,	"Concrete_Brown_S", true};
+	{"Material.008",	DIFFUSE			,	"Bunker_Ero", true};
+	{"Material.004",	DIFFUSE			,	"Revetment_SAM4-3", true};
+	{"Material.004",	NORMAL_MAP			,	"Revetment_SAM4_N", true};
+	{"Material.004",	SPECULAR			,	"Revetment_SAM4_S", true};
+}

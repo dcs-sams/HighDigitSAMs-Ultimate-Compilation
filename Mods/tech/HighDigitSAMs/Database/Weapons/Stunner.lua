@@ -61,7 +61,7 @@ local Stunner				= {
 				40000.0, 0};
 	ModelData = { 
 		58, -- model params count
-		0.5, -- characteristic square
+		0.39, -- characteristic square
 		
 		-- Cx dependent parameters
 		0.05, -- Cx_k0 bar Cx0 on subsonic (M << 1)

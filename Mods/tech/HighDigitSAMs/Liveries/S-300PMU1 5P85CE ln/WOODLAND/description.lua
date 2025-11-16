@@ -1,12 +1,12 @@
 livery = {
-	{"Material.008",	DIFFUSE			,	"Missile_Cannister", true};
-	{"Material.008",	DIFFUSE			,	"Missile_Cannister", true};
-	{"Material.008",	DIFFUSE			,	"Missile_Cannister", true};
-	{"Material.008",	DIFFUSE			,	"Missile_Cannister", true};
-	{"Material.008",	DIFFUSE			,	"Missile_Cannister", true};
-	{"Material.008",	DIFFUSE			,	"Missile_Cannister", true};
-	{"Material.008",	DIFFUSE			,	"Missile_Cannister", true};
-	{"Material.008",	DIFFUSE			,	"Missile_Cannister", true};
-	{"Material",	DIFFUSE			,	"s-300", true};
+	{"Material.008",	DIFFUSE			,	"Missile_Cannister-W", true};
+	{"Material.008",	DIFFUSE			,	"Missile_Cannister-W", true};
+	{"Material.008",	DIFFUSE			,	"Missile_Cannister-W", true};
+	{"Material.008",	DIFFUSE			,	"Missile_Cannister-W", true};
+	{"Material.008",	DIFFUSE			,	"Missile_Cannister-W", true};
+	{"Material.008",	DIFFUSE			,	"Missile_Cannister-W", true};
+	{"Material.008",	DIFFUSE			,	"Missile_Cannister-W", true};
+	{"Material.008",	DIFFUSE			,	"Missile_Cannister-W", true};
+	{"Material",	DIFFUSE			,	"s-300-W", true};
 }
 name = "Russian woodland Camo"

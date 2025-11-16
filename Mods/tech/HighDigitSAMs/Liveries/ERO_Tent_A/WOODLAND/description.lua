@@ -1,0 +1,14 @@
+livery = {
+	{"Material.003",	DIFFUSE			,	"ERO_Sandbags-W", true};
+	{"Material.003",	DIFFUSE			,	"ERO_Sandbags-W", true};
+	{"Material.003",	DIFFUSE			,	"ERO_Sandbags-W", true};
+	{"Material.003",	DIFFUSE			,	"ERO_Sandbags-W", true};
+	{"Material.004",	DIFFUSE			,	"ERO_Tent-W", true};
+	{"Material.005",	DIFFUSE			,	"ERO_tent-W", true};
+	{"Material",	DIFFUSE			,	"ERO_Tent-W", true};
+	{"Material",	NORMAL_MAP			,	"ERO_Tent_N", true};
+	{"Material",	SPECULAR			,	"ERO_Tent_S", true};
+	{"Material",	DIFFUSE			,	"ERO_Tent-W", true};
+	{"Material",	NORMAL_MAP			,	"ERO_Tent_N", true};
+	{"Material",	SPECULAR			,	"ERO_Tent_S", true};
+}

@@ -9,3 +9,4 @@ livery = {
 	{"SAXAD",	DIFFUSE			,	"radar_64h6e-D", true};
 	{"Material.040",	DIFFUSE			,	"S-300-2D", true};
 }
+name = "Russian desert Camo"

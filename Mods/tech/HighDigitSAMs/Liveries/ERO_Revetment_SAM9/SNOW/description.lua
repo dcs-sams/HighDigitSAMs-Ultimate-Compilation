@@ -1,0 +1,32 @@
+livery = {
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.006",	DIFFUSE			,	"Revetment_SAM4-SN", true};
+	{"Material.004",	DIFFUSE			,	"Revetment_SAM4-SN", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+	{"Material.007",	DIFFUSE			,	"ConreteER_Brown", true};
+}

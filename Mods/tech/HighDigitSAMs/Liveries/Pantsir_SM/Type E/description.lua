@@ -1,5 +1,5 @@
 livery = {
-{"Pantsir", 0, "Russian_Camp5_ERO", true};
+{"Pantsir", 0, "Pantsir2", false};
 }
 
-name = "Woodland Camo"
+name = "Russian Camo"
