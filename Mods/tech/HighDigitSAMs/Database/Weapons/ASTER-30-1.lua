@@ -9,7 +9,7 @@ SAMPT_ASTER_30_Blk_1 = {
     mass            = 450.0,
     wsTypeOfWeapon  =  {wsType_Weapon,wsType_Missile,wsType_AA_Missile,WSTYPE_PLACEHOLDER},
 
-    Escort 			= 0,
+    Escort 			= 3,
     Head_Type 		= 2,
 	sigma 			= {5, 5, 5},
     M 				= 450.0,
@@ -17,8 +17,8 @@ SAMPT_ASTER_30_Blk_1 = {
     H_min 			= 3.0,
     Diam 			= 180.0,
     Cx_pil 			= 1,
-    D_max 			= 45000.0,
-    D_min 			= 2000.0,
+    D_max 			= 40000.0,
+    D_min 			= 1200.0,
     Head_Form 		= 1,
     Life_Time 		= 180.0,
     Nr_max 			= 60,
@@ -26,8 +26,8 @@ SAMPT_ASTER_30_Blk_1 = {
     v_mid 			= 1000.0,
     Mach_max 		= 4.5,
     t_b 			= 0.0,
-    t_acc 			= 4.5,
-    t_marsh 		= 15.0,
+    t_acc 			= 3.75,
+    t_marsh 		= 6.55,
     Range_max 		= 120000.0,
     H_min_t 		= 3.0,
     Fi_start     	= 3.14152, -- angle of tracking at firing
@@ -47,44 +47,37 @@ SAMPT_ASTER_30_Blk_1 = {
     KillDistance 	= 20.0,
 	tail_scale 	 	= 1.4,		
 	ccm_k0 			= 0.1,	
-	
+	rad_correction = 1,
+	radar_synced = true,
 	active_radar_lock_dist	= 22000.0,
 	SeekerGen				= 4,
 	hoj						= 1,
 
-	PN_gain = 7.5,
-	PN_coeffs = {7,
-				1000.0 ,1.0,
-				5000.0, 0.80,
-				15000.0, 0.60,
-				20000.0, 0.40,
-				25000.0, 0.30,
-				30000.0, 0.10,
-				40000.0, 0};
+	PN_gain = 5,
 	ModelData = { 
 		58, -- model params count
 		0.4, -- characteristic square
 		
 		-- Cx dependent parameters
-		0.05, -- Cx_k0 bar Cx0 on subsonic (M << 1)
-		0.092,  -- Cx_k1 height of the peak of the wave crisis 
-		0.014,  -- Cx_k2 steepness of the front on the approach to the wave crisis
-		-0.015, -- Cx_k3 bar Cx0 at supersonic (M >> 1)
-		0.72,  -- Cx_k4 steepness of the decline after the wave crisis
-		1.13, -- coefficient of dumping of a polar
+		0.026, -- Cx_k0 bar Cx0 on subsonic (M << 1)
+		0.053,  -- Cx_k1 height of the peak of the wave crisis 
+		0.01,  -- Cx_k2 steepness of the front on the approach to the wave crisis
+		-0.245, -- Cx_k3 bar Cx0 at supersonic (M >> 1)
+		0.075,  -- Cx_k4 steepness of the decline after the wave crisis
+		0.7, -- coefficient of dumping of a polar
 
 		-- Cy dependent parameters
-		0.87, --Cy_k0 bar Сy0 at subsonic (M << 1)
-		0.01, -- Cy_k1 bar Cy0 at supersonic (M >> 1)
-		0.21, -- Cy_k2 steepness of the decline (front) behind the wave crisis
+		1.5, --Cy_k0 bar Сy0 at subsonic (M << 1)
+		0.8, -- Cy_k1 bar Cy0 at supersonic (M >> 1)
+		1.2, -- Cy_k2 steepness of the decline (front) behind the wave crisis
 
-		0.3, -- 7 Alfa_max maximum balancing angle, radians
+		0.4, -- 7 Alfa_max maximum balancing angle, radians
 		6, -- angular velocity created by the moment of gas rudders
 		
 		--t_statr 	t_b 	t_accel 	t_march 	t_inertial 	t_break 	t_end
-		0,   		0,		3.5, 		13.5,		0, 			0, 			1000000000, -- time of stage, sec
-		0, 			0, 		47.143,		6.66,		0, 			0, 			0, 			-- fuel flow rate, kg/sec
-		0, 			0, 		100000, 	22500,		0, 			0, 			0, 			-- thrust, newtons
+		0,   		3.75, 	0,			10.1,		0, 			0, 			1000000000, -- time of stage, sec
+		0, 			91, 	0,			3.4,		0, 			0, 			0, 			-- fuel flow rate, kg/sec
+		0, 			95000, 	0, 			6100,		0, 			0, 			0, 			-- thrust, newtons
 		
 		1000000000, --self destruct by timer
 		180, --onboard power system operation time, sec
@@ -115,12 +108,6 @@ SAMPT_ASTER_30_Blk_1 = {
 		0, 
 		0 
 	},
-
-	self_destruct = {
-        delay 					= 1,
-        trigger_dist            = 1000,
-        inactivation_dist       = 900,
-    },
 
 	warhead = enhanced_a2a_warhead(15.0); 
 

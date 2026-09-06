@@ -46,20 +46,14 @@ SAMPT_ASTER_15 = {
     Reflection 		= 0.1,
     KillDistance 	= 20.0,
 	tail_scale 	 	= 1.4,		
-	ccm_k0 			= 0.15,	
+	ccm_k0 			= 0.15,
+	rad_correction = 1,
+	radar_synced = true,	
 	
 	active_radar_lock_dist	= 18000.0,
 	SeekerGen				= 3,
 
 	PN_gain = 4,
-	PN_coeffs = {7,
-				1000.0 ,1.0,
-				5000.0, 0.80,
-				15000.0, 0.60,
-				20000.0, 0.40,
-				25000.0, 0.30,
-				30000.0, 0.10,
-				40000.0, 0};
 	ModelData = { 
 		58, -- model params count
 		0.5, -- characteristic square
@@ -81,9 +75,9 @@ SAMPT_ASTER_15 = {
 		0, -- angular velocity created by the moment of gas rudders
 		
 		--t_statr 	t_b 	t_accel 	t_march 	t_inertial 	t_break 	t_end
-		0,   		0,		3,   		11, 		0, 			0, 			1000000000, -- time of stage, sec
-		0, 			0, 		33.33,		5.09,		0, 			0, 			0, 			-- fuel flow rate, kg/sec
-		0, 			0, 		50000,   	16500,		0, 			0, 			0, 			-- thrust, newtons
+		0,   		3,   	0,			11, 		0, 			0, 			1000000000, -- time of stage, sec
+		0, 			33.33,	0,			5.09,		0, 			0, 			0, 			-- fuel flow rate, kg/sec
+		0, 			50000,  0, 			16500,		0, 			0, 			0, 			-- thrust, newtons
 		
 		1000000000, --self destruct by timer
 		90, --onboard power system operation time, sec

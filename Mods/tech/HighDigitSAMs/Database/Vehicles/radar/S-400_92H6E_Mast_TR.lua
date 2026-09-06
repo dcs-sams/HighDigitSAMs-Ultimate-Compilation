@@ -5,7 +5,7 @@ set_recursive_metatable(GT.chassis, GT_t.CH_t.STATIC);
 GT.chassis.life = 4;
 
 GT.visual.shape = "ERO_92N6E_TR_Mast";
-GT.visual.shape_dstr = "ERO_92N6E_TR_Mast_D";
+GT.visual.shape_dstr = "ERO_30N6_TR_Mast_D";  --ERO_92N6E_TR_Mast_D
 GT.visual.fire_pos[2] = 1;
 GT.toggle_alarm_state_interval = 6;
 GT.defaultStartAlarmState = GT_t.START_ALARM_STATES.GREEN;

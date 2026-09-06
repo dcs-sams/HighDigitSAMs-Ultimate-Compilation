@@ -63,7 +63,6 @@ GT.WS[ws].LN[1].barrels_reload_type = 3;
 GT.WS[ws].LN[1].depends_on_unit = {{{"ELM2084_MMR_AD_RT"},},{{"ELM2084_MMR_WLR"},},{{"ELM2084_MMR_AD_SC"},},};
 GT.WS[ws].LN[1].reactionTime = 0.1;
 GT.WS[ws].LN[1].show_external_missile = true
-GT.WS[ws].LN[1].max_number_of_missiles_channels = 1;
 GT.WS[ws].LN[1].PL[1].ammo_capacity = 20;
 GT.WS[ws].LN[1].PL[1].shot_delay = 0.5;
 GT.WS[ws].LN[1].PL[1].reload_time = 50;

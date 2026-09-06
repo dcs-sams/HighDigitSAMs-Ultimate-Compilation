@@ -3,7 +3,7 @@ local Stunner				= {
 	Name				= Stunner,
 	display_name		= _("Stunner (David's Sling)"),
 	name				= "Stunner",
-	Escort				= 0,
+	Escort				= 3,
 	Head_Type			= 2, 
 	sigma				= {0, 0, 0},
 	M					= 400.0,
@@ -47,21 +47,15 @@ local Stunner				= {
 	wsTypeOfWeapon		= {wsType_Weapon,wsType_Missile,wsType_AA_Missile,WSTYPE_PLACEHOLDER};
 	SeekerGen 			= 4,
 	active_radar_lock_dist	= 24500.0,
+	rad_correction = 1,
+	radar_synced = true,
 	hoj					= 1,
 	ccm_k0				= 0.03,
 
 	PN_gain = 10,
-	PN_coeffs = {7,
-				1000.0 ,1.0,
-				5000.0, 0.80,
-				15000.0, 0.60,
-				20000.0, 0.40,
-				25000.0, 0.30,
-				30000.0, 0.10,
-				40000.0, 0};
 	ModelData = { 
 		58, -- model params count
-		0.39, -- characteristic square
+		0.49, -- characteristic square
 		
 		-- Cx dependent parameters
 		0.05, -- Cx_k0 bar Cx0 on subsonic (M << 1)

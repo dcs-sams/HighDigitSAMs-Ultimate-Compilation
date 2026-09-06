@@ -1,4 +1,16 @@
 ## Changelog
+### v1.4.5
+- Fixed SAMP/T, Iron Dome, David's Sling not firing again after missile miss
+- Fixed floating in the midair Aster-30 missiles near TELs
+- Fixed Aster-30 invisible booster
+- Fixed Aster-30, Tamir and Stunner datalink loss
+- Updated Aster-30 flight model
+- Replaced some non-existent models
+- Changed Pantsir-SM missile fire sound
+### v1.4.4
+- Updated Pantsir-SM missile fire sound
+- Updated Pantsir-SM missile exhaust
+- Fixed SAMP/T missiles floating near launcher
 ### v1.4.3
 - All ERO assets moved to "Fortifications" units category
 ### v1.4.2

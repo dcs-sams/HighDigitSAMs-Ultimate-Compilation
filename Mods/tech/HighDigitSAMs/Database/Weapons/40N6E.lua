@@ -27,7 +27,7 @@ local SA40N6 = {
 	Name = SA40N6, --40N6
 	display_name = _('40N6 (SA-21 Growler)'),
 	name = "SA40N6",
-	Escort = 0, -- Escort(Requires tracking?): 0 - no, 1 - launch aircraft, 2 - another aircraft, 3 - from the ground
+	Escort = 3, -- Escort(Requires tracking?): 0 - no, 1 - launch aircraft, 2 - another aircraft, 3 - from the ground
 	Head_Type = 2, -- Seeker type code, in our case 8 is for TVM (Track via missile). 1 = Passive IR homing, 2 = Active Radar Homing
 	sigma = {40, 40, 40}, -- maximum aiming error in meters, in target coordinates. x - longitudinal axis of the target, y - vertical axis of the target, z - transverse axis of the target
 	M = 1893.0, -- Mass of the missile at launch
@@ -35,7 +35,7 @@ local SA40N6 = {
 	H_min = 5.0, -- minimum target altitude
 	Diam = 519.0, -- Missile diameter in mm
 	Cx_pil = 8, -- "Cx like pendants" - Moment of inertia??
-	D_max = 340000.0, -- Maximum range firing at low altitude, in meters
+	D_max = 150000.0, -- Maximum range firing at low altitude, in meters
 	D_min = 4000.0, -- minimum range in meters
 	Head_Form = 1, -- determines shape of the missile head for drag modeling; 0 for hemispherical, 1 for conical
 	Life_Time = 480.0, -- Battery life
@@ -69,14 +69,8 @@ local SA40N6 = {
 	PN_gain = 14,
 	hoj = 1,
 	SeekerGen = 4,
-	PN_coeffs = {7,
-				1000.0 ,1.0,
-				5000.0, 0.80,
-				15000.0, 0.60,
-				20000.0, 0.40,
-				25000.0, 0.30,
-				30000.0, 0.10,
-				40000.0, 0};
+	rad_correction = 1,
+	radar_synced = true,
 	ModelData = { 
 		58, -- model params count
 		2, -- characteristic square
@@ -133,7 +127,7 @@ local SA40N6 = {
 	},
 	active_radar_lock_dist = 25000,
 	ccm_k0 = 0.2, -- Countermeasures effectiveness
-	wsTypeOfWeapon  = {wsType_Missile, wsType_Missile, wsType_AA_Missile,WSTYPE_PLACEHOLDER};
+	wsTypeOfWeapon  = {wsType_Weapon, wsType_Missile, wsType_AA_Missile,WSTYPE_PLACEHOLDER};
 	shape_table_data = 
 	{
 		{

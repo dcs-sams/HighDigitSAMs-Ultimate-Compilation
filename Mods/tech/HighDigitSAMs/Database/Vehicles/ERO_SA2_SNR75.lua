@@ -3,7 +3,7 @@ set_recursive_metatable(GT, GT_t.generic_stationary)
 set_recursive_metatable(GT.chassis, GT_t.CH_t.STATIC);
 
 GT.visual.shape = "ERO_SA2_SNR75"
-GT.visual.shape_dstr = "ERO_SA2_SNR75_D"
+GT.visual.shape_dstr = "ERO_SA2_SNR75" --ERO_SA2_SNR75_D
 
 
 GT.swing_on_run = false

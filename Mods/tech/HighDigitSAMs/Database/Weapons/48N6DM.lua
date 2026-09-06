@@ -63,14 +63,6 @@ local SA48N6DM = {
 	KillDistance = 25.0,
 	category = CAT_MISSILES,
 	PN_gain = 8,
-	PN_coeffs = {7,
-				1000.0 ,1.0,
-				5000.0, 0.80,
-				15000.0, 0.60,
-				20000.0, 0.40,
-				25000.0, 0.30,
-				30000.0, 0.10,
-				40000.0, 0};
 	ModelData = { 
 		58, -- model params count
 		2, -- characteristic square

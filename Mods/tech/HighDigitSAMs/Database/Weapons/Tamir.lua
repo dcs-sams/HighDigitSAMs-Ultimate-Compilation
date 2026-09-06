@@ -27,7 +27,7 @@ local TAMIR				= {
 	Name				= TAMIR,
 	display_name		= _('Tamir (Iron Dome)'),
 	name				= "TAMIR",
-	Escort				= 0,
+	Escort				= 3,
 	Head_Type			= 2,
 	sigma				= {1, 1, 1},
 	M					= 90.0,
@@ -69,18 +69,12 @@ local TAMIR				= {
 	SeekerGen 			= 4,
 	hoj					= 1,
 	active_radar_lock_dist	= 16000.0,
+	rad_correction = 1,
+	radar_synced = true,
 	category			= CAT_MISSILES,
 	wsTypeOfWeapon		= {wsType_Weapon,wsType_Missile,wsType_AA_Missile,WSTYPE_PLACEHOLDER};
 
 	PN_gain = 7,
-	PN_coeffs = {7,
-				1000.0 ,1.0,
-				5000.0, 0.80,
-				15000.0, 0.60,
-				20000.0, 0.40,
-				25000.0, 0.30,
-				30000.0, 0.10,
-				40000.0, 0};
 	ModelData = { 
 		58, -- model params count
 		0.3, -- characteristic square
